@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Update Information</title>
+  </head>
+  <body>
+    <h1>Update your information</h1>
+    <form method="POST" action="/update">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="{{.Name}}" required><br><br>
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" name="gender" value="{{.Gender}}" required><br><br>
+      <input type="submit" value="Update">
+    </form>
+  </body>
+</html>
